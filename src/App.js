@@ -41,7 +41,7 @@ localStorage.setItem('react-notes-app-data',JSON.stringify(notes))
     <div className="container">
       <Header handleToggle={setDarkMode}/>
       <Search handleSearchNote={setSearchText}/>
-    <NoteList notes={notes.filter((note)=>note.text.toLowerCase().includes(searchText))} handleDeleteNote= {deleteNote} handleAddNote = {addNote}/>
+    <NoteList notes={notes.filter((note)=>note.text.toLowerCase().includes(searchText.toLowerCase()))} handleDeleteNote= {deleteNote} handleAddNote = {addNote}/>
     </div>
     </div>
   );
